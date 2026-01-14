@@ -18,6 +18,7 @@ title: Error Codes
 | 40020 | Invalid Project ID | Confirm the Project ID format is correct |
 | **Authentication & Permission Errors** | | |
 | 40100 | API Key authentication required | Add a valid API Key to the request header |
+| 40103 | Specified user does not exist | Check if the user_id is correct |
 | 40130 | API Key authentication required | Add a valid API Key to the request header |
 | 40132 | Invalid or expired API Key | Check API Key status or generate a new one |
 | **Quota & Rate Limit Errors** | | |
@@ -36,13 +37,13 @@ title: Error Codes
 | 50004 | Memory service is temporarily unavailable | Retry memory write/fetch operations later |
 | 50005 | Search service is temporarily unavailable | Retry memory search operations later |
 | **Knowledge Base & Operations** | | |
-| 50103 | File count exceeds limit | Check KB file count (limit is 20) |
+| 50103 | File count exceeds limit | The number of files for a single upload should not exceed 20 |
 | 50104 | Single file size exceeds limit | Ensure single file does not exceed 100MB |
 | 50105 | Total file size exceeds limit | Ensure total upload size does not exceed 300MB |
 | 50107 | Invalid file format | Check and change file format |
 | 50120 | Knowledge base not found | Confirm if the knowledgebase_id is correct |
 | 50123 | Knowledge base not linked to project | Confirm KB is authorized for the current project |
-| 50131 | Task not found | Check if task_id is correct (common in status queries) |
+| 50131 | Task not found | Check if task_id is correct |
 | 50143 | Failed to add memory | Algorithm service anomaly, please try again later |
 | 50144 | Failed to add message | Failed to save chat history |
-| 50145 | Failed to save feedback and write memory | Anomaly during feedback processing |
+| 50145 | Failed to save feedback and write memory | Anomaly during feedback processing, please try again later |
